@@ -57,7 +57,38 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="./jquery.diamonds.js"></script>
-  
+        <script>
+            // Function to set diamond size
+            function getDiamondSize() {
+                if (window.innerWidth <= 768) {
+                    return 180; // Mobile size
+                } else {
+                    return 250; // Desktop size
+                }
+            }
+
+            // Initialize diamond grid
+            function initDiamonds() {
+                $(".diamond-grid").diamonds({
+                    size: getDiamondSize(250),
+                    gap: 5,
+                    hideIncompleteRow: false,
+                    autoRedraw: true,
+                    itemSelector: ".item"
+                });
+            }
+
+            // Run on page load
+            $(document).ready(function () {
+                initDiamonds();
+            });
+
+            // Run again when screen is resized
+            $(window).resize(function () {
+                $(".diamond-grid").diamonds("remove");
+                initDiamonds();
+            });
+        </script>
 
     </body>
 
