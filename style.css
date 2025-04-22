@@ -14,18 +14,7 @@
   background-color: #000000;
   opacity: 0.6;
   filter: blur(5px);
-  transition: 0.5s all ease-in-out;
-  /* extra */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.item p {
-  z-index: -1; /* extra */
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: aliceblue;
-  display: none;
+  transition: 0.4s;
 }
 .item img {
   z-index: 1; /* extra */
@@ -39,6 +28,18 @@
   transform: scale(1.1);
 }
 /* extra */
+.bangla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bangla p {
+  z-index: -1; /* extra */
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: aliceblue;
+  display: none;
+}
 .bangla:hover img {
   display: none;
 }
@@ -49,5 +50,14 @@
   .diamond-grid {
     width: 100%;
     margin: 0 auto;
+  }
+  .bangla {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+  }
+  .bangla p {
+    font-size: 0.8rem;
   }
 }
