@@ -28,22 +28,22 @@
   transform: scale(1.1);
 }
 /* extra */
-.bangla {
+.extra {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.bangla p {
+.extra p {
   z-index: -1; /* extra */
   font-size: 1.5rem;
   font-weight: 500;
   color: aliceblue;
   display: none;
 }
-.bangla:hover img {
+.extra:hover img {
   display: none;
 }
-.bangla:hover p {
+.extra:hover p {
   display: block;
 }
 @media (max-width: 768px) {
@@ -51,13 +51,13 @@
     width: 100%;
     margin: 0 auto;
   }
-  .bangla {
+  .extra {
     width: 180px;
     height: 180px;
     display: flex;
     justify-content: center;
   }
-  .bangla p {
+  .extra p {
     font-size: 0.8rem;
   }
 }
